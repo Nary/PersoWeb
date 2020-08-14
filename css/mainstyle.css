@@ -1,13 +1,37 @@
 body {
     background-color: black;
-
     color: silver;
     display: flex;
     height: 100%;
     margin: 0;
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* unvisited link */
+
+.divWindow  a:link {
+    color: #669999;
+}
+
+.divWindow a:visited {
+    color: #6f6396;
+}
+
+.divWindow  a:hover {
+    color: rgb(189, 176, 66);
+}
+
+.divWindow  a:active {
+    background-color:white;
+}
+.divWindow  a {
+    color: white;
 }
 
 .maindiv {
@@ -16,53 +40,55 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
-}
-.divWindow {
-    
-    opacity: 0.9;
-    justify-content:center;
-    
-    margin:0;
+    justify-content: center;
+    align-items: center;
 }
 
-.headSub h1{
+.divWindow {
+    opacity: 0.9;
+    justify-content: center;
+    margin: 0;
+}
+
+.headSub h1 {
     display: inline-block;
     font-size: 2em;
-    margin:0;
-    margin-left:10px;
-    margin-right:10px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.windowHead{
+
+.windowHead {
     padding-bottom: 0;
-    padding-top:10px;
+    padding-top: 10px;
 }
-.headSub{
+
+.headSub {
     display: inline-block;
-    border : 2px solid silver;
+    border: 4px solid silver;
     border-bottom: 0;
     border-radius: 15px 15px 0px 0px;
-    background-color:  #061539;
-    color :  #7887AB;
+    background-color: #061539;
+    color: #7887AB;
+    box-shadow: 5px 0px 5px 2px rgba(0,0,0,0.63);
 }
+
 .windowBody {
-    background-color:  #061539;
-    color :  #7887AB;
-    border : 2px solid silver;
+    background-color: #061539;
+    color: #7887AB;
+    border: 4px solid silver;
     border-radius: 0px 15px 15px 15px;
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.63);
     min-width: 150px;
     min-height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:10px;
+    padding: 10px;
 }
-p {
-    font-size: 1.5em;
-}
+
 .sig {
     text-align: right;
 }

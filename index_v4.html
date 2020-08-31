@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mainstyle.css">
+    <script src="https://kit.fontawesome.com/3b0292ddd4.js" crossorigin="anonymous"></script>
+    <title>Ainary - en construction</title>
+</head>
+
+<body>
+    <div id="maindiv">
+
+        <header class="PosAbsolute font_super_smash header_bg1">
+            <div id='TitlePortefolio'>
+                Aina NARY
+            </div>
+            <!-- <div id='DivMenu'> -->
+            <div id='BurgerMenu' class="BurgerIcon">
+                <i class="fas fa-bars "></i>
+            </div>
+            <div id='NavMenu' class='NoDisplay'>
+                <ul>
+                    <a href="#SectionIntro" id='aIntro'>
+                        <li>Accueil</li>
+                    </a>
+                    <a href="#SectionAboutMe">
+                        <li>Introduction</li>
+                    </a>
+                    <a href="#SectionComp">
+                        <li>Compétence</li>
+                    </a>
+                    <a href="#SectionRealisation">
+                        <li>Réalisation</li>
+                    </a>
+
+                    <a href="#SectionContact" id='aContact'>
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+
+        <section id="SectionIntro" class="MainSectionStyle">
+            <div class="divWindow">
+                <div class="windowHead">
+                    <div class="headSub">
+                        <h1>Bonjour !</h1>
+                    </div>
+                </div>
+                <div class="windowBody">
+                    <p>Ce site est en construction.</p>
+                    <p>Vous pouvez en attendant regarder mes traveaux réalisés pendant ma formation à IT-akademy :</p>
+                    <ul>
+                        <li>Site pour crèches à domicile réalisé avec wordpress : <a
+                                href="https://bulladom.com/">bulladom.com</a> </li>
+                        <li>Mon github des travaux à IT-akademy : <a
+                                href="https://github.com/Aina-ITAkademy/">github.com/Aina-ITAkademy/</a> </li>
+                    </ul>
+                    <p class="sig">Aina Nary</p>
+                </div>
+            </div>
+        </section>
+        <section id="SectionAboutMe" class="MainSectionStyle">Presentation</section>
+
+        <section id="SectionComp" class="MainSectionStyle">
+
+            <div>
+                <h1>Mes compétences</h1>
+            </div>
+            <div id='SectionComp_MainDiv'>
+                <!-- Les div sont pas forcement assez grandes pour revenir en arriere ... 100% height ?-->
+
+                <div id='LanguageDiv_Main' class="Comp_Div_Main windowBody2">
+                    <div>
+                        <h2>Languages</h2>
+                    </div>
+                    <div id="Div_Languages" class='Div_Main_Buttons'>
+                        <!-- <div> -->
+                        <div id="HTMLCSS" onclick="show_hide('Div_Languages','DivHtmlCSS')"><span>HTML-CSS</span> </div>
+                        <div id="Javascript" onclick="show_hide('Div_Languages','DivJavascript')">
+                            <span>Javascript</span>
+                        </div>
+                        <!-- </div>
+                        <div> -->
+                        <div id="PHP" onclick="show_hide('Div_Languages','DivPHP')"><span>PHP/SQL</span></div>
+                        <!-- </div>
+                        <div> -->
+                        <div id="Java" onclick="show_hide('Div_Languages','DivJava')"><span>Java</span> </div>
+                        <div id="Python" onclick="show_hide('Div_Languages','DivPython')"><span>Python</span></div>
+                        <!-- </div>
+                        <div> -->
+                        <div id="Ada_95" onclick="show_hide('Div_Languages','DivAda_95')"><span>Ada 95</span></div>
+                        <div id="Matlab" onclick="show_hide('Div_Languages','DivMatlab')"><span>Matlab</span></div>
+                        <!-- </div>
+                        <div> -->
+                        <div id="C" onclick="show_hide('Div_Languages','DivC')"><span>C/C++</span></div>
+                        <div id="Bash" onclick="show_hide('Div_Languages','DivBash')"><span>Bash</span></div>
+                        <!-- </div> -->
+                    </div>
+                    <div id='DivBash' class='comp_detail info_hide' onclick="show_hide('DivBash','Div_Languages')">
+                        <div>
+                            <h3>Bash</h3>
+                        </div>
+                        <div>
+
+                            <p>Le bash est un langage de script dont j'ai des notions. Je l'ai pratiqué lors de
+                                manipulation
+                                de donnée textuelle ou pour automatiser
+                                des tâches tel que la configuration automatique d'une machine virtuel avec
+                                Vagrant/Virtual
+                                Box.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivC' class='comp_detail info_hide' onclick="show_hide('DivC','Div_Languages')">
+                        <div>
+                            <h3>C/C++</h3>
+                        </div>
+                        <div>
+
+                            <p>Le C et C++ sont des langages dont j'ai des notions. Je les aient utilisé lors de certain
+                                cours de réseaux
+                                et programmation lors de mon Bachelors en science informatique.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivMatlab' class='comp_detail info_hide' onclick="show_hide('DivMatlab','Div_Languages')">
+                        <div>
+                            <h3>Mathlab</h3>
+                        </div>
+                        <div>
+
+                            <p>J'ai beaucoup utilisé Mathlab aussi bien en Bachelor que en Master en Science
+                                informatique.<br>
+                                C'est avec ce langage que j'ai beaucoup pratiqué l'algorithmie.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivAda_95' class='comp_detail info_hide' onclick="show_hide('DivAda_95','Div_Languages')">
+                        <div>
+                            <h3>Ada 95</h3>
+                        </div>
+                        <div>
+
+                            <p> Le langage ADA 95 est l'un des premiers langages que j'ai appris à mes début de Bachelor
+                                en
+                                Science Informatique.<br>
+                                Orienté Objet et d'un typage fort, ADA 95 m'a permis d'acquérir des bases solides en
+                                programmation.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivPython' class='comp_detail info_hide' onclick="show_hide('DivPython','Div_Languages')">
+                        <div>
+                            <h3>Python</h3>
+                        </div>
+                        <div>
+
+                            <p>Le python est un langage que j'ai principalement vu lors des cours en Master Science
+                                Informatique pour la manipulation de donnée textuelle et calcul de probabilité.<br>
+
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivPHP' class='comp_detail info_hide' onclick="show_hide('DivPHP','Div_Languages')">
+                        <div>
+                            <h3>PHP/MySQL</h3>
+                        </div>
+                        <div>
+
+                            <p>Appris pendant ma formation en développement Web à l'IT-Akademy pour dynamiser les pages
+                                web
+                                et faire de la programmation orienté Objet.<br>
+                                Les serveurs sur lesquels nous avons travaillé utilisaient Apache avec comme base de
+                                donnée
+                                MySQL.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivJavascript' class='comp_detail info_hide'
+                        onclick="show_hide('DivJavascript','Div_Languages')">
+                        <div>
+                            <h3>Javascript</h3>
+                        </div>
+                        <div>
+
+                            <p> D'abord découvert le Javascript à mon Bachelor, je l'ai ensuite appronfondi lors de ma
+                                formation en développement web à l'IT-akademy.<br>
+                                J'ai principalement appris à utiliser ce language pour l'interactivité dans des pages
+                                Web,
+                                mais aussi pour faire des animations 3D avec le plugin google O3D.<br>
+                                Utilisé avec nodejs, express et MongoDB j'ai réalisé lors d'un Projet en groupe un site
+                                de
+                                référence de film. De plus avec le framework React Native
+                                nous avons crée une version application mobile de notre site de film<br>
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivHtmlCSS' class='comp_detail info_hide'
+                        onclick="show_hide('DivHtmlCSS','Div_Languages')">
+                        <div>
+                            <h3>HTML-CSS</h3>
+                        </div>
+                        <div>
+
+                            <p>Le Html et CSS sont des languages que j'ai d'abord étudié en bachelor pour construire mes
+                                premiers
+                                page web.
+                                Je les ai par la suite appronfondi lors de ma formation en développement web et mobile à
+                                l'IT-akademy.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div id='DivJava' class='comp_detail info_hide' onclick="show_hide('DivJava','Div_Languages')">
+                        <div>
+                            <h3>JAVA</h3>
+                        </div>
+                        <div>
+
+                            <p>Le Java est l'un des que j'ai le plus utilisés lors de mes années en bachelor et master,
+                                servant de
+                                base pour la <span class="Span_Important">programmation orientée objet</span>.
+                            </p>
+                            <p>
+                                Mon projet personnel d'application android, un jeu "Sudoku" a été écrit en
+                                java avec le framework <span class="Span_Important">Android SDK</span> et l'IDE <span
+                                    class="Span_Important">Android studio</span>.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id='OutilsDiv_Main' class="Comp_Div_Main windowBody2">
+                    <div>
+                        <h2>Outils</h2>
+                    </div>
+                    <div id="Div_Outils" class='Div_Main_Buttons'>
+                        <div id="Git" onclick="show_hide('Div_Outils','DivGit')"> <span>Git</span></div>
+                        <div id="Virtual_Box" onclick="show_hide('Div_Outils','DivVirtual_Box')"> <span>Virtual
+                                Box</span>
+                        </div>
+
+                    </div>
+                    <div id='DivGit' class='comp_detail info_hide' onclick="show_hide('DivGit','Div_Outils')">
+                        <div>
+                            <h3>Git</h3>
+                        </div>
+                        <div>
+                            <p>Le logiciel de gestion de version que j'ai utilisé en Bachelor Science informatique et ma
+                                formation développeur Web.<br>
+                                Je l'ai notamment utilisé en projet de groupe.
+                            </p>
+                        </div>
+                    </div>
+                    <div id='DivVirtual_Box' class='comp_detail info_hide'
+                        onclick="show_hide('DivVirtual_Box','Div_Outils')">
+                        <div>
+                            <h3>Virtual Box</h3>
+                        </div>
+                        <div>
+                            <p>Pour la virtualisation j'utilise VirtualBox avec Vagrant pour crée un environnement
+                                virtuel
+                                selon mes besoins.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='EnvDiv_Main' class="Comp_Div_Main windowBody2">
+                    <div>
+                        <h2>Environnement</h2>
+                    </div>
+                    <div id="Div_Env" class='Div_Main_Buttons'>
+                        <div id="Windows" onclick="show_hide('Div_Env','DivWindows')"><span>Windows</span></div>
+                        <div id="Linux" onclick="show_hide('Div_Env','DivLinux')"><span>Linux</span></div>
+                    </div>
+                    <div id='DivWindows' class='comp_detail info_hide' onclick="show_hide('DivWindows','Div_Env')">
+                        <div>
+                            <h3>Windows</h3>
+                        </div>
+                        <div>
+                            <p> Systéme d'exploitation que j'utilise quotidiennement.
+                            </p>
+                        </div>
+                    </div>
+                    <div id='DivLinux' class='comp_detail info_hide' onclick="show_hide('DivLinux','Div_Env')">
+                        <div>
+                            <h3>Linux</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Systéme d'exploitation que j'utilise principalement en développement. <br>
+                                J'utilise aussi bien l'interface graphique que le terminal avec ligne de commande.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="SectionRealisation" class="MainSectionStyle">Realisation</section>
+        <section id="SectionContact" class="MainSectionStyle">Contact</section>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

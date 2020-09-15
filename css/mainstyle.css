@@ -12,13 +12,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.3em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
-/* unvisited link */
 
 .divWindow a:link {
     color: #669999;
@@ -113,8 +113,8 @@ p {
     /* width: 100%; */
     min-height: 100vh;
     width: 100vw;
-    max-width: 100%;
-    /* ignore scrollbar (bug */
+    max-width: 100%;  /* ignore scrollbar bug */
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,10 +152,18 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
+    color:white;
+    text-shadow:2px 2px black;
+    opacity: 0.75;
 }
 
 .header_bg1 {
-    background-color: rgba(127, 255, 212, 0.5);
+    background-color:rgba(127, 255, 212, 1); 
+    background-image: url("../img/3d_line_tech_cut.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px outset darkgreen;
 }
 
 .NoDisplay {
@@ -169,8 +177,9 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: large;
-    margin-left: 10px;
-    margin-top: 10px;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    margin:10px;
     /* color: white; */
 }
 
@@ -181,6 +190,7 @@ header {
 
 #NavMenu {
     width: 100vw;
+
     margin-right: initial;
 }
 
@@ -193,15 +203,25 @@ header {
     width: 100%;
     height: 100%;
     margin: 0px;
+    color:white;
+    text-shadow:2px 2px black;
 }
 
 #NavMenu ul li {
     list-style: none;
-    /* padding: 10px; */
-    margin: 10px;
+    padding: 10px;
+ 
     /* font-family: 'Poppins', sans-serif; */
     font-weight: 900;
+    
     /* color: white; */
+}
+#NavMenu ul li:hover {
+    color: black;
+    text-shadow:0px 0px white;
+    /* background-color: #615192; */
+    background-color: rgb(8, 216, 147);
+    text-decoration: underline;
 }
 
 #NavMenu a {
@@ -226,11 +246,9 @@ a:visited {
 
 /* mouse over link */
 
-a:hover {
-    color: inherit;
-    background-color: grey;
-    text-decoration: none;
-}
+/* a:hover {
+    text-decoration: underline;
+} */
 
 /* selected link */
 
@@ -364,7 +382,8 @@ a:active {
 }
 
 .Div_Main_Buttons>div:hover {
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: rgb(189, 247, 228);
     color: black;
 }
 
@@ -438,6 +457,9 @@ a:active {
     color: white;
 }
 
+#SectionRealisation a {
+    text-decoration: underline;
+}
 .SectionRealis_MainDiv {
     min-height: 100vh;
     display: flex;
@@ -521,9 +543,14 @@ a:active {
 
 .LastSectionStyle {
     /* width: 100%; */
-    background-color: #4F628E;
-    opacity: 0.9;
-    min-height: 10vh;
+    /* background-color: #4F628E; */
+    background-image: url("../img/circuit-mini2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 2px solid black;
+    opacity: 0.95;
+    min-height: 200px;
     width: 100vw;
     max-width: 100%;
     display: flex;
@@ -532,4 +559,38 @@ a:active {
 }
 .LastSectionStyle > div {
     margin : 10px 10px 10px 10px;
+}
+.LastSectionStyle  a {
+    color: inherit;
+    width: 100%;
+    text-align: center;
+}
+
+/* unvisited link */
+
+.LastSectionStyle a:link {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* visited link */
+
+.LastSectionStyle a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* mouse over link */
+
+.LastSectionStyle a:hover {
+    color: inherit;
+    background-color: grey;
+    text-decoration: none;
+}
+
+/* selected link */
+
+.LastSectionStyle a:active {
+    color: inherit;
+    text-decoration: none;
 }

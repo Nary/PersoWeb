@@ -1,33 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/mainstyle.css">
     <script src="https://kit.fontawesome.com/3b0292ddd4.js" crossorigin="anonymous"></script>
-    <title>Ainary - en construction</title>
+    <title>Ainary - Portefolio</title>
 </head>
 
 <body>
-    <div class="maindiv">
-        <div class="divWindow">
-            <div class="windowHead">
-                <div class="headSub">
-                    <h1>Bonjour !</h1>
-                </div>
+    <div id="maindiv">
+
+        <header class="PosAbsolute font_super_smash header_bg1">
+            <div id='TitlePortefolio'>
+                Aina NARY
             </div>
-            <div class="windowBody">
-                <p>Ce site est en construction.</p>
-                <p>Vous pouvez en attendant regarder mes traveaux réalisés pendant ma formation à IT-akademy :</p>
+            <!-- <div id='DivMenu'> -->
+            <div id='BurgerMenu' class="BurgerIcon">
+                <i class="fas fa-bars "></i>
+            </div>
+            <div id='NavMenu' class='NoDisplay'>
                 <ul>
-                    <li>Site pour crèches à domicile réalisé avec wordpress : <a href="https://bulladom.com/">bulladom.com</a> </li>
-                    <li>Mon github des travaux à IT-akademy : <a href="https://github.com/Aina-ITAkademy/">github.com/Aina-ITAkademy/</a> </li>
+                    <li>
+                        <a href="#SectionAboutMe">
+                            <spans>Introduction</spans>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#SectionComp">
+                            <span>Compétence</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#SectionRealisation">
+                            <span>Réalisation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#SectionContact" id='aContact'>
+                            <span>Liens</span>
+                        </a>
+                    </li>
                 </ul>
+            </div>
+        </header>
+
+        <section id="SectionAboutMe" class="MainSectionStyle">
+            <div class="windowBody_Intro">
+                <h2>Bonjour !</h2>
+                <p>Bienvenue sur mon site !</p><br>
+                <p>Vous y trouverez un résumé de mes compétences et travaux réalisés.<br>
+                    Bonne visite !</p>
                 <p class="sig">Aina Nary</p>
             </div>
-        </div>
+
+        </section>
+
+        <section id="SectionComp" class="MainSectionStyle">
+
+            <div>
+                <h1>Mes compétences</h1>
+            </div>
+            <div id='SectionComp_MainDiv'>
+                <!-- Les div sont pas forcement assez grandes pour revenir en arriere ... 100% height ?-->
+
+                <div id='LanguageDiv_Main' class="Comp_Div_Main divWindow">
+                    <div class="windowHead">
+                        <div class="headSub">
+                            <div>
+                                <h2>Languages</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Div_Languages" class='Div_Main_Buttons windowBody'>
+                        <!-- <div> -->
+                        <div id="HTMLCSS" onclick="show_hide('Div_Languages','DivHtmlCSS')"><span>HTML-CSS</span> </div>
+                        <div id="Javascript" onclick="show_hide('Div_Languages','DivJavascript')">
+                            <span>Javascript</span>
+                        </div>
+                        <!-- </div>
+                        <div> -->
+                        <div id="PHP" onclick="show_hide('Div_Languages','DivPHP')"><span>PHP/SQL</span></div>
+                        <!-- </div>
+                        <div> -->
+                        <div id="Java" onclick="show_hide('Div_Languages','DivJava')"><span>Java</span> </div>
+                        <div id="Python" onclick="show_hide('Div_Languages','DivPython')"><span>Python</span></div>
+                        <!-- </div>
+                        <div> -->
+                        <div id="Ada_95" onclick="show_hide('Div_Languages','DivAda_95')"><span>Ada 95</span></div>
+                        <div id="Matlab" onclick="show_hide('Div_Languages','DivMatlab')"><span>Matlab</span></div>
+                        <!-- </div>
+                        <div> -->
+                        <div id="C" onclick="show_hide('Div_Languages','DivC')"><span>C/C++</span></div>
+                        <div id="Bash" onclick="show_hide('Div_Languages','DivBash')"><span>Bash</span></div>
+                        <!-- </div> -->
+                    </div>
+                    <div id='DivBash' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>Bash</h3>
+                            <span onclick="show_hide('DivBash','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p>Langage de script que j'ai pratiqué lors de
+                                manipulations de données textuelles ou pour automatiser
+                                des tâches tel que la configuration automatique d'une machine virtuel avec
+                                Vagrant/Virtual
+                                Box.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivC' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>C/C++</h3>
+                            <span onclick="show_hide('DivC','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p>Le C et C++ sont des langages utilisés lors de certain
+                                cours de réseaux
+                                et programmation lors de mon Bachelors en science informatique, notamment celui de mon
+                                travail de bachelor "Flipchart interactif".
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivMatlab' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>Mathlab</h3>
+                            <span onclick="show_hide('DivMatlab','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p>J'ai beaucoup utilisé Mathlab aussi bien en Bachelor qu'en Master en Science
+                                informatique.<br>
+                                C'est avec ce langage avec lequel j'ai beaucoup pratiqué l'algorithmie.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivAda_95' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>Ada 95</h3>
+                            <span onclick="show_hide('DivAda_95','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p> Le langage ADA 95 est l'un des premiers langages que j'ai appris à mes débuts de
+                                Bachelor
+                                en
+                                Science Informatique.<br>
+                                Orienté Objet et d'un typage fort, ADA 95 m'a permis d'acquérir des bases solides en
+                                programmation.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivPython' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>Python</h3>
+                            <span onclick="show_hide('DivPython','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p>Le python est un langage que j'ai principalement vu lors des cours en Master Science
+                                Informatique pour la manipulation de données textuelles et calcul des probabilités.<br>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivPHP' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>PHP/MySQL</h3>
+                            <span onclick="show_hide('DivPHP','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p>Appris pendant ma formation en développement Web à l'IT-Akademy pour dynamiser les pages
+                                web
+                                et faire de la programmation orientée Objet.<br>
+                                Les serveurs sur lesquels nous avons travaillé utilisaient Apache avec comme base de
+                                données MySQL.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivJavascript' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>Javascript</h3>
+                            <span onclick="show_hide('DivJavascript','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p> D'abord découvert le Javascript à mon Bachelor, je l'ai ensuite approfondi lors de ma
+                                formation en développement web à l'IT-akademy.<br>
+                                J'ai principalement appris à utiliser ce language pour l'interactivité dans des pages
+                                Web, mais aussi pour faire des animations 3D avec le plugin google O3D.<br>
+                                Avec la plateforme nodejs, les framework express et React Native, ainsi que la base de
+                                donnée MongoDB j'ai réalisé en groupe le Projet d'un site
+                                de référence de film "Cinebamo". <br>
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivHtmlCSS' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>HTML-CSS</h3>
+                            <span onclick="show_hide('DivHtmlCSS','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p>Le Html et CSS sont des languages que j'ai d'abord étudiés en bachelor pour construire
+                                mes
+                                premiers
+                                page web.
+                                Je les ai par la suite approfondis lors de ma formation en développement web et mobile à
+                                l'IT-akademy.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div id='DivJava' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>JAVA</h3>
+                            <span onclick="show_hide('DivJava','Div_Languages')">X</span>
+                        </div>
+                        <div>
+
+                            <p>Le Java est l'un des languages que j'ai le plus utilisés lors de mes années en bachelor
+                                et master pour la <span class="Span_Important">programmation orientée objet</span>.
+                            </p>
+                            <p>
+                                Mon projet personnel d'application android, un jeu "Sudoku" a été écrit en
+                                java avec le framework <span class="Span_Important">Android SDK</span> et l'IDE <span
+                                    class="Span_Important">Android studio</span>.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id='OutilsDiv_Main' class="Comp_Div_Main divWindow">
+                    <div class="windowHead">
+                        <div class="headSub">
+                            <div>
+
+                                <h2>Outils</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Div_Outils" class='Div_Main_Buttons windowBody'>
+                        <div id="Git" onclick="show_hide('Div_Outils','DivGit')"> <span>Git</span></div>
+                        <div id="Virtual_Box" onclick="show_hide('Div_Outils','DivVirtual_Box')"> <span>Virtual
+                                Box</span>
+                        </div>
+
+                    </div>
+                    <div id='DivGit' class='comp_detail info_hide'>
+
+                        <div>
+                            <span>X</span>
+                            <h3>Git</h3>
+                            <span onclick="show_hide('DivGit','Div_Outils')">X</span>
+                        </div>
+                        <div>
+                            <p>Le logiciel de gestion de version que j'ai utilisé en Bachelor Science informatique et ma
+                                formation développeur Web pour des projets en groupe.<br>
+                                Vous pouvez trouver dans la <a href="#SectionContact">
+                                    section lien
+                                </a> mon github personnel ainsi que celui utilisé pendant ma formation à IT-Akademy.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id='DivVirtual_Box' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>Virtual Box</h3>
+                            <span onclick="show_hide('DivVirtual_Box','Div_Outils')">X</span>
+                        </div>
+                        <div>
+                            <p>Pour la virtualisation j'utilise VirtualBox avec Vagrant pour créer un environnement
+                                virtuel
+                                selon mes besoins tel que developpement de site avec des CMS différents.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='EnvDiv_Main' class="Comp_Div_Main divWindow">
+                    <div class="windowHead">
+                        <div class="headSub">
+                            <div>
+
+                                <h2>Environnement</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Div_Env" class='Div_Main_Buttons windowBody'>
+                        <div id="Windows" onclick="show_hide('Div_Env','DivWindows')"><span>Windows</span></div>
+                        <div id="Linux" onclick="show_hide('Div_Env','DivLinux')"><span>Linux</span></div>
+                    </div>
+                    <div id='DivWindows' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>Windows</h3>
+                            <span onclick="show_hide('DivWindows','Div_Env')">X</span>
+                        </div>
+                        <div>
+                            <p> Système d'exploitation que j'utilise quotidiennement.<br>
+                                Versions de windows connus : XP, Vista, 7, 10.
+                            </p>
+                        </div>
+                    </div>
+                    <div id='DivLinux' class='comp_detail info_hide'>
+                        <div>
+                            <span>X</span>
+                            <h3>Linux</h3>
+                            <span onclick="show_hide('DivLinux','Div_Env')">X</span>
+                        </div>
+                        <div>
+                            <p>
+                                Système d'exploitation que j'utilise principalement en développement. <br>
+                                J'utilise aussi bien l'interface graphique que le terminal avec ligne de commande.<br>
+                                Distributions Linux utilisés : Débian, Ubuntu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="SectionRealisation" class="MainSectionStyle">
+            <div>
+                <h1>Mes Réalisations</h1>
+            </div>
+            <div class="SectionRealis_MainDiv">
+                <div class="RealDiv windowBody_4">
+                    <div class="DivReal_Img">
+                        <img src="img/logo_cinebamo.png" class="card-img-top imgCard" alt="cinebamo-logo">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="Real_title">Appli web : Cinebamo</h2>
+                        <p class="card-text"> Cinébamo est un projet web réalisé en groupe pendant ma
+                            formation en Développement Web et Mobile à IT-Akademy.
+                            <br>
+                            Cinébamo consiste à rechercher un film dans une base de données selon le titre et/ou genre.
+                            <br>
+                            Il a été réalisé en une version web et une version d'application mobile pendant 2
+                            semaines.<br>
+                            La version mobile à été réalisé avec le framework React Native. <br>
+                            J'ai principalement réalisé la recherche dans la base de données.<br>
+                            Le code source est sur le github "Les BB codeurs". "cinebamo" sous l'appellation "applicine"
+                            pour la version web et "aplicinemobi" pour la version mobile.
+                        </p>
+                        <p class="card-text">Technologies utilisés : HTML/CSS, Javascript, Nodejs, MangoDB, React Native
+                            <br>
+                            Compte github avec le projet cinebamo : <a href="https://github.com/cinebamo"
+                                target="_blank">https://github.com/cinebamo</a>
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="RealDiv windowBody_4">
+                    <div class="DivReal_Img">
+                        <img src="img/logo_bulles_bulladom.png" class="card-img-top imgCard" alt="Bulladom-logo">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="Real_title">Site Web : Bulladom</h2>
+                        <p class="card-text">Bulladom est un site des crèches à domicile réalisé en groupe pendant ma
+                            formation en Développement Web et Mobile à IT-Akademy.<br>
+                            Réalisé pour un client en 4 jours avec le CMS Wordpress. <br>
+
+                            J'ai été chargé principalement de la page de demande de contact avec formulaire, de
+                            l'installation de l'environnement de développement dans l'équipe et du déploiement. <br>
+                            Lien du site : <a href="https://bulladom.com/" target="_blank">https://bulladom.com/</a><br>
+                        </p>
+
+                        <p class="card-text">Technologie utilisé : HTML/CSS, Javascript, Wordpress, Vagrant (VirtualBox)
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="windowBody_4 RealDiv">
+                    <div class="DivReal_Img">
+                        <img src="img/sudoku.png" class="card-img-top imgCard" alt="Sudoku-logo">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="Real_title">Application Android : Jeu Sudoku</h2>
+                        <p class="card-text">Un jeu sudoku réalisé indépendamment pour les portables Android.<br>
+                            Réalisé en 1 mois avec l'IDE Android studio.<br>
+                            Le jeu est disponible pour les téléphones android dans le google playstore. <br>
+                            <a href="https://play.google.com/store/apps/details?id=com.gmail.aina.nary.sudoku&hl=fr"
+                                target="_blank">Lien
+                                vers le playstore</a>
+                        </p>
+                        <p class="card-text">Technologie utilisé : Java, Android Studio, Android SDK</p>
+
+                    </div>
+                </div>
+
+                <div class="windowBody_4 RealDiv">
+                    <div class="DivReal_Img">
+                        <img src="img/kinect.png" class="card-img-top imgCard" alt="kinect-img">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="Real_title">Travail de Bachelor : Flipchart Interactif</h2>
+                        <p class="card-text">Mon travail de bachelor fut de réaliser un flipchart interactif avec la
+                            caméra 3D Kinect.<br>
+                            Ecrit en C++, le but était d'avoir un flipchart sur n'importe quelle surface en utilisant
+                            projecteur,
+                            et d'utiliser la caméra Kinect qui détecte les mouvements pour interagire avec le
+                            programme.<br>
+
+                        </p>
+                        <p class="card-text">Technologie utilisé : C++, Qt, Caméra 3D Kinect, Protocole TUIO</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer id="SectionContact" class="LastSectionStyle">
+
+            <div>
+                <p><i class="fas fa-envelope"></i> Adresse E-mail : <a
+                        href="mailto:dev.ainanary@gmail.com">dev.ainanary@gmail.com</a>
+                    <br>
+                    <i class="fab fa-github"></i> Compte github IT-Akademy :
+                    <a href="https://github.com/Aina-ITAkademy/" target="_blank">https://github.com/Aina-ITAkademy/</a>
+                    <br>
+                    <i class="fab fa-github-alt"></i> Compte github personnel :
+                    <a href="https://github.com/Nary/" target="_blank">https://github.com/Nary/ </a>
+
+                </p>
+            </div>
+        </footer>
     </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

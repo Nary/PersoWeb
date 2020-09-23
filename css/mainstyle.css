@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    font-size: 1.3em;
 }
 
 /* p {
@@ -386,6 +386,7 @@ a:active {
     align-content: center;
     flex: 1 0 25;
     height: 95%;
+    
 }
 
 .Div_Main_Buttons>div {
@@ -402,6 +403,7 @@ a:active {
     color: black;
     border-color: deepskyblue;
     border-width: 0px 1px 2px 2px;
+    cursor: pointer;
 }
 
 .Div_Main_Buttons>div:hover {
